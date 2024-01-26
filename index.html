@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: grey;
+    }
+
+    .gallery {
+        width: 30%;
+        height: 200px;
+        display: flex;
+        gap: 5px;
+        position: relative;
+        top: 230px;
+        left: 550px;
+    }
+
+    .gallery img {
+        width: 15%;
+        height: 150%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: all ease 0.4s;
+        cursor: pointer;
+    }
+
+    .gallery img:hover {
+        width: 200%;
+    }
+
+    .gallery:hover .box {
+        filter: grayscale(100%) opacity(24%);
+    }
+
+    .gallery .box:hover {
+        filter: grayscale(0%) opacity(100%);
+    }
+    
+</style>
+
+<body>
+    <div class="gallery">
+        <img class="box" src="./img/749922.webp" alt="">
+        <img class="box" src="./img/8.260833.jpg" alt="">
+        <img class="box" src="./img/download.jfif" alt="">
+        <img class="box" src="./img/neon-green-mask-handsome-boy-cartoon-bh5uplh63twg6lcb.jpg" alt="">
+        <img class="box" src="./img/jujutsu-kaisen-anime-temporada-straming-crunchyroll-japao-e1700762622149.jpeg"
+            alt="">
+        <img class="box" src="./img/neon-green-mask-handsome-boy-cartoon-bh5uplh63twg6lcb.jpg" alt="">
+    </div>
+</body>
+
+</html>
